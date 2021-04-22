@@ -111,14 +111,28 @@
 # day=calendar.weekday(2007,a,b)
 # print(arrList[day])
 
-N=int(input())
-for i in range(N):
-    if i%2==0:
-        print("1"*(N-i))
-    else:
-        print("0"*(N-i))
+# N=int(input())
+# for i in range(N):
+#     if i%2==0:
+#         print("1"*(N-i))
+#     else:
+#         print("0"*(N-i))
+#
+#
+#가위바위보게임
+# 4번한다 철수 3번연속 이기거나 두번 이상비길경우 상금
+# 나머지 영희 상금
+# 영희 상금 경우의 수
 
 
+a = ['철수','영희','비김']
+counta=0
+for i in a:
+    for j in a:
+        for k in a:
+            print("{} : {} : {}".format(i,j,k))
+            counta+=1
+print(counta)
 
 
 
